@@ -1,0 +1,12 @@
+.footer{
+    margin-top: 50px;
+}
+.has-text-centered{
+    color: rgba(0, 0, 0, 0.75);
+    text-align: -webkit-center;
+    .link:hover {
+        cursor: pointer;
+        color: lightslategray!important;
+        fill: lightslategray!important;
+    }
+}

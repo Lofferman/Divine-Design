@@ -1,0 +1,19 @@
+.main-container{
+    margin-top: 20px;
+    height: auto;
+}
+.bar{
+    margin: 10px;
+    border-radius: 5px;
+    //height: 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.text{
+    font-size: 7vw;
+    flex-flow: nowrap;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+    margin-left: 2vw;
+}

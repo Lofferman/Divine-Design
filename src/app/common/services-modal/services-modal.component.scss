@@ -1,0 +1,33 @@
+.mat-dialog-title{
+    text-align-last: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.container{
+    grid-template-columns: 30% auto 2vw;
+    grid-column-gap: 25px;
+    display: grid;
+    .name{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        font-size: 100%;
+        text-align: left;
+        &-sub{
+            margin-left: 10%;
+            inline-size: max-content;
+        }
+    }
+    .spacer{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        border: 1px dashed #000000;
+                height: 0.5px;
+        align-self: center;
+
+    }
+    .value{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        font-size: 100%
+    }
+}

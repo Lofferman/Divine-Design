@@ -1,0 +1,131 @@
+.main{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
+    margin-bottom: 20px!important;
+}
+.hero-container{
+width: 100%;
+grid-column-start: 1;
+grid-column-end: 1;
+}
+.hero{
+    margin-top: -12%;
+    margin-left: 5%;
+    height: 100vh;
+}
+.container{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-rows: auto auto 10px;
+    grid-row-gap: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.title{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-size: 100px;
+    font-weight: bold;
+    .divine{
+        margin-bottom: -40px;
+        color:#4F4F4F;
+        text-align: left;
+    }
+    .design{
+        margin-top: -40px;
+        text-align: center;
+        color:#E90B3A;
+    }
+    .title-svg{
+        width: 60vw;
+    }
+}
+.subtext{
+    margin-top: -50px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-size: 35px;
+    color:#4f4f4f80;
+
+}
+}
+
+.cta-container{
+    justify-self: center;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin-top: -30px;
+height: 30px;
+-webkit-animation: action 1s infinite  alternate;
+animation: action 1s infinite  alternate;
+.cta-down:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+}
+
+
+
+
+@media (max-width: 1280px) {
+
+    .main{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 15px;
+    }
+    .hero-container{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    }
+    .hero{
+        margin-left: 0;
+        //width: 100%;
+        height: 60vh;
+    }
+    .container{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 5px;
+    .title{
+        margin-top: -10%;
+        margin-left: 5%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        .divine{
+            font-size: 15vw;
+        }
+        .design{
+            font-size: 15vw;
+            margin-left: 25px;
+        }
+    }
+    .subtext{
+        font-size: 5vw;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 60px;        }
+    }
+    .cta-container{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+    }
+
+    
+}

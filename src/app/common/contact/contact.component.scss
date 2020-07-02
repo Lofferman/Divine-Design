@@ -1,0 +1,230 @@
+.main-container{
+
+    margin-top: 10vh;
+
+    display: grid;
+    grid-template-columns: auto 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.info{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+
+    .contact-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 70px;
+
+        color: #E90B3A;
+        opacity: 0.5;
+    }
+    .contact-divider{
+        border: 3px solid #E90B3A;
+                width: 150px;
+                opacity: 0.5;
+    }
+    .phone{
+
+        margin: 20px 0 20px 50px;
+        .phone-number{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        svg{
+            cursor: pointer;
+        }
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 53px;
+        /* identical to box height */
+        justify-self: left;
+        display: inline-flex;
+        color: rgba(0, 0, 0, 0.75);
+    }
+    .location{
+        margin: 0 0 20px 50px;
+        .address{
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        svg{cursor: pointer;}
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 53px;
+        /* identical to box height */
+        justify-self: left;
+        display: inline-flex;
+        color: rgba(0, 0, 0, 0.75);
+    }
+    .fb-like-share{
+        .want-to-know{
+            margin-left: 20px;
+        }
+        justify-self: left;
+        display: inline-flex;
+        margin: 0 0 0 50px;
+    }
+    .small{display: none;}
+    .big{display: grid;}
+}
+
+.contact-img{
+    img{
+        width: 100%;
+        height: 466px;
+    }
+}
+
+//Media Queries
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .main-container{
+
+        grid-template-columns: auto;
+    }
+    .icon-svg{
+        margin-left: -30px!important;
+        height: 26px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .main-container{
+
+        grid-template-columns: auto;
+    }
+    .icon-svg{
+        margin-left: -30px!important;
+        height: 26px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .main-container{
+
+        grid-template-columns: auto;
+    }
+    .icon-svg{
+        margin-left: -30px!important;
+        height: 26px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    
+    .main-container{
+
+        grid-template-columns: auto;
+    }
+    .icon-svg{
+        margin-left: -30px!important;
+        height: 26px;
+    }
+    .contact-title{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    .fb-like{
+        width: 50px;
+    }
+    .contact-img{
+
+    }
+  }
+  @media (min-width: 200px) and (max-width: 320px) {
+    
+    .main-container{
+        padding: 5px;
+        grid-template-columns: auto;
+    }
+    .icon-svg{
+        margin-left: -30px!important;
+        height: 26px;
+    }
+    .contact-title{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .address{
+        word-break: normal;
+    }
+    .fb-like{
+        width: 50px;
+    }
+    .contact-img{
+
+    }
+  }

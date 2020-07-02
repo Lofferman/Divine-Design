@@ -1,0 +1,321 @@
+ .menu-bar{
+    z-index: 5;
+    font-family: Roboto;
+    position: sticky;
+    top: 0;
+    .icon{
+        cursor: pointer;
+        height: 25px;
+    }
+      /*.spacer {flex: 1 1 auto;}
+      .stylistBtn{padding: 0 10px; cursor: pointer; font-size: 25px;}
+      .stylistBtn:hover{border-left: 5px solid #247276;}
+      .spacer-min {flex: 1 1 auto;}
+      .contactBtn{padding: 0 10px; cursor: pointer; font-size: 25px; }
+      .contactBtn:hover{border-left: 5px solid #247276;}
+    mat-toolbar{
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }*/
+} 
+.menu-button{display: inline;}
+.links{
+    text-align: center;
+}
+.spacer-min {flex: 1 1 auto;}
+.menu-bar {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 25px auto 7% 7%;
+    grid-column-gap: 15px;
+  }
+  .logoMain {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+  .spacer {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-column-gap: 15px;
+
+    .left-scis{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    .line{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .right-scis{
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+  }
+  .link1 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+  .link2 {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+  .links{padding: 0 10px; cursor: pointer; font-size: 25px; }
+  .links:hover{border-left: 5px solid #247276;}
+
+.currentPage{
+background-color: lightblue;
+}
+
+
+
+
+/* Line  */
+
+.line{
+    margin-top: 0.7rem;
+    //margin-left: 10px;
+    //margin-right: 10px;
+    height: 1px;
+    width: auto;
+    border: 2px solid #000000;
+    
+   /*  position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%; */
+}
+
+
+/* Left Scis */
+
+.left-scis{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 25px;
+    height: 25px;
+    transform: rotate(-90deg);
+    }
+
+
+/* Right scis */
+
+.right-scis{
+   /*  position: absolute;
+    top: 0;
+    right: 0;
+ */
+    width: 25px;
+height: 25px;
+transform: rotate(90deg);
+}
+
+.container {
+    display: none;
+    cursor: pointer;
+  }
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+   .change1 {
+    -webkit-transform: rotate(-45deg) translate(-8px, 0px);;
+    transform: rotate(-45deg) translate(-8px, 0px);;
+  }
+  
+  .change2 {opacity: 0;}
+  
+  .change3 {
+    -webkit-transform: rotate(45deg) translate(-12px, -6px);
+    transform: rotate(45deg) translate(-12px, -6px);
+  }
+
+.sidenav {
+    min-width: 240px;
+    a {
+        cursor: pointer; 
+        font-size: 25px; 
+        border-top: 1px solid #00000034;
+        display: block;
+        padding: 6px 24px;
+        width: 100%;
+        text-align: left;
+    }
+    a:last-of-type {
+        border-bottom: 1px solid #00000034;
+    }
+    .menuLinks{padding: 0 10px; cursor: pointer; font-size: 25px; }
+    .menuLinks:hover{border-left: 5px solid #247276;}
+}
+
+//Media Queries
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    //CSS
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (max-width: 1280px) {
+    
+    //CSS
+    .menu-bar {
+        background-color:#FFFFFF;
+        z-index: 500;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 25px auto 40px;
+        grid-column-gap: 10px;
+      }
+    .menu-button{
+        display: inline!important;
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+    .links{
+        display: none;
+    }
+    .hero{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-container{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .hero{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-container{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .hero{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-container{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    
+    .hero{
+        margin-top: 60px;
+        width: 90%;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-container{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+  }
+  @media (min-width: 200px) and (max-width: 320px) {
+    
+
+
+    .hero{
+        margin-top: 50px;
+        width: 90%;
+    }
+    .line{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .cta-container{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        svg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+  }

@@ -1,0 +1,9 @@
+<div class="main-container">
+    <ng-container *ngFor="let service of services">
+        <div class="bar" (click)="openDialog(service)" [ngStyle]="service.displayName?{'background-color': service.colorHex} : {'display': 'none'}">
+            <div class="text" [ngClass]="{'scrolling': service.serviceName === 'SPECIALCOLORING' || service.serviceName === 'OTHER'}">{{service.displayName}}</div>
+
+        </div>
+    </ng-container>
+    
+</div>
