@@ -13,7 +13,6 @@ import { ServicesModalComponent } from './common/services-modal/services-modal.c
 import { HeroComponent } from './common/hero/hero.component';
 import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule,    
+    BrowserAnimationsModule,   
   ],
   entryComponents: [
     ServicesModalComponent

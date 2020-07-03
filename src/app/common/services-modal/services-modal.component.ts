@@ -18,32 +18,150 @@ export class ServicesModalComponent implements OnInit {
 
   formatData = () => {
 
-    if(this.data.serviceName === 'COLORING'){
-      this.items = [
-        {
-          name:'Roots',
-          value:'55',
-          sub:false
-        },
-        {
-          name:'/w HL and LL',
-          value:'85',
-          sub:true
-        },
-        {
-          name:'/w demi',
-          value:'67',
-          sub:true
-        },        {
-          name:'All Over',
-          value:'75',
-          sub:false
-        },        {
-          name:'Extra Bowl',
-          value:'12',
-          sub:false
-        }
-      ]
+    
+    switch (this.data.serviceName) {
+      case 'COLORING':
+        this.items = [
+          {
+            name:'Roots',
+            value:'55',
+            sub:false
+          },
+          {
+            name:'/w HL and LL',
+            value:'85',
+            sub:true
+          },
+          {
+            name:'/w demi',
+            value:'67',
+            sub:true
+          },        {
+            name:'All Over',
+            value:'75',
+            sub:false
+          },        {
+            name:'Extra Bowl',
+            value:'12',
+            sub:false
+          }
+        ]
+        break;
+
+        case 'PERM':
+          this.items = [
+            {
+              name:'Roots',
+              value:'55',
+              sub:false
+            },
+            {
+              name:'/w HL and LL',
+              value:'85',
+              sub:true
+            },
+            {
+              name:'/w demi',
+              value:'67',
+              sub:true
+            },        {
+              name:'All Over',
+              value:'75',
+              sub:false
+            },        {
+              name:'Extra Bowl',
+              value:'12',
+              sub:false
+            }
+          ]
+          break;
+
+          case 'WAX':
+            this.items = [
+              {
+                name:'Roots',
+                value:'55',
+                sub:false
+              },
+              {
+                name:'/w HL and LL',
+                value:'85',
+                sub:true
+              },
+              {
+                name:'/w demi',
+                value:'67',
+                sub:true
+              },        {
+                name:'All Over',
+                value:'75',
+                sub:false
+              },        {
+                name:'Extra Bowl',
+                value:'12',
+                sub:false
+              }
+            ]
+            break;
+
+            case 'HAIRCUTS':
+              this.items = [
+                {
+                  name:'Roots',
+                  value:'55',
+                  sub:false
+                },
+                {
+                  name:'/w HL and LL',
+                  value:'85',
+                  sub:true
+                },
+                {
+                  name:'/w demi',
+                  value:'67',
+                  sub:true
+                },        {
+                  name:'All Over',
+                  value:'75',
+                  sub:false
+                },        {
+                  name:'Extra Bowl',
+                  value:'12',
+                  sub:false
+                }
+              ]
+              break;
+
+              case 'OTHER':
+                this.items = [
+                  {
+                    name:'Roots',
+                    value:'55',
+                    sub:false
+                  },
+                  {
+                    name:'/w HL and LL',
+                    value:'85',
+                    sub:true
+                  },
+                  {
+                    name:'/w demi',
+                    value:'67',
+                    sub:true
+                  },        {
+                    name:'All Over',
+                    value:'75',
+                    sub:false
+                  },        {
+                    name:'Extra Bowl',
+                    value:'12',
+                    sub:false
+                  }
+                ]
+                break;
+    
+      default:
+        break;
     }
   }
 

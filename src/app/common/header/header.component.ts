@@ -19,22 +19,11 @@ public isMenuOpen: boolean = false;
     
   }
 
-  top(){}
 
   navigateTo(location){
     console.log(location)
-  if(location === 'TOP'){
-    this.topLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-  }else 
-  if(location === 'SERVICES'){
-    this.stylistsLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-  }else 
-  if(location === 'CONTACT'){
-    this.contactLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-  }else{
-    console.log("Error: Invalid scrollTo")
-  }
-  this.currentLocation = location
+    this.currentLocation = location
+  this.siteData.setScrollObj(location)
   }
   public onSidenavClick(): void {
     this.isMenuOpen = false;

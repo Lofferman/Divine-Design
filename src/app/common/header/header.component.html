@@ -1,12 +1,12 @@
 <div class="menu-bar">
-          <span class="iconMain"><img src="assets/img/ICON.png" alt="logo" class="icon" (click)="navigateTo('TOP')" #top></span>
+          <span class="iconMain"><img src="assets/img/ICON.svg" alt="logo" class="icon" (click)="navigateTo('TOP')" #top></span>
           <span class="spacer">
             <img class=".div-transparent left-scis" src="assets/img/scis.png" alt="hero">
             <div class="line"></div>
             <img class=".div-transparent right-scis" src="assets/img/scis.png" alt="hero">
         </span> 
-          <div class="link1 links" [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('SERVICES')" #stylists>Services</div>
-          <div class="link2 links"  [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('CONTACT')" #contact>Contact</div>
+          <div class="link1 links" [ngClass]="{'currentPage': currentLocation === 'SERVICES'}" (click)="navigateTo('SERVICES')">Services</div>
+          <div class="link2 links"  [ngClass]="{'currentPage': currentLocation === 'CONTACT'}" (click)="navigateTo('CONTACT')">Contact</div>
             <div class="container menu-button" (click)="sidenav.toggle()">
               <div [ngClass]="{'change1': isMenuOpen}" class="bar1"></div>
               <div [ngClass]="{'change2': isMenuOpen}" class="bar2"></div>
@@ -21,9 +21,9 @@
   class="sidenav" 
   (click)="onSidenavClick()"
   >
-  <a mat-button><div class="menuLinks" [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('SERVICES')" #stylists>Services</div></a>
+  <a mat-button><div class="menuLinks" [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('SERVICES')">Services</div></a>
   <!-- <a mat-button routerLink="/page1">Portfolio</a> -->
-  <a mat-button><div class="menuLinks"  [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('CONTACT')" #contact>Contact</div>
+  <a mat-button><div class="menuLinks"  [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('CONTACT')">Contact</div>
   </a>
 </mat-sidenav>
 
