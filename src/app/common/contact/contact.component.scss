@@ -1,44 +1,55 @@
 .main-container{
-
+width: 100%;
     margin-top: 10vh;
 
     display: grid;
-    grid-template-columns: auto 50%;
+    grid-template-columns: auto 800px;
     justify-items: center;
     align-items: center;
 }
-
 .info{
+    text-align-last: center;
     display: grid;
-    grid-template-rows: auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
     justify-items: center;
     align-items: center;
 
     .contact-title{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 60px;
         line-height: 70px;
-
+        border-bottom: 3px solid #E90B3A;
         color: #E90B3A;
         opacity: 0.5;
     }
-    .contact-divider{
-        border: 3px solid #E90B3A;
-                width: 150px;
-                opacity: 0.5;
-    }
-    .phone{
 
+    .phone{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-template-columns: auto auto;
+        display: grid;
         margin: 20px 0 20px 50px;
         .phone-number{
+            grid-column-start: 2;
+            grid-column-end: 2;
             margin-left: 20px;
             cursor: pointer;
         }
         svg{
+            grid-column-start: 1;
+            grid-column-end: 1;
             cursor: pointer;
+            align-self: center;
+            height: 4vh;
         }
         font-family: Roboto;
         font-style: normal;
@@ -48,15 +59,28 @@
         /* identical to box height */
         justify-self: left;
         display: inline-flex;
-        color: rgba(0, 0, 0, 0.75);
+        color: #E90B3A;
     }
     .location{
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-template-columns: auto auto;
+        display: grid;
         margin: 0 0 20px 50px;
         .address{
+            grid-column-start: 2;
+            grid-column-end: 2;
             margin-left: 20px;
             cursor: pointer;
         }
-        svg{cursor: pointer;}
+        svg{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            cursor: pointer;
+            align-self: center;
+            height: 4vh;
+
+        }
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
@@ -64,24 +88,37 @@
         line-height: 53px;
         /* identical to box height */
         justify-self: left;
-        display: inline-flex;
         color: rgba(0, 0, 0, 0.75);
     }
     .fb-like-share{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        justify-self: left;
+        display: inline-flex;
+        align-self: center;
+        margin: 20px 0 20px 50px;
+        svg{
+            height: 4vh;
+
+        }
         .want-to-know{
             margin-left: 20px;
         }
         justify-self: left;
         display: inline-flex;
-        margin: 0 0 0 50px;
     }
     .small{display: none;}
     .big{display: grid;}
 }
 
 .contact-img{
+    text-align-last: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
     img{
-        width: 100%;
+        width: auto;
         height: 466px;
     }
 }
@@ -97,6 +134,25 @@
   
     //CSS
     
+  }
+
+
+
+  
+  @media (max-width: 1280px) {
+    .main-container{
+        display: inline-block;
+        grid-template-columns: none!important;
+        grid-template-rows: auto 800px;
+        .info{    
+            grid-row-start: 1;
+            grid-row-end: 1;}
+        .contact-img{    
+            grid-row-start: 2;
+            grid-row-end: 2;}
+    }
+
+
   }
   
   /* 
@@ -116,11 +172,7 @@
   */
   
   @media (min-width: 768px) and (max-width: 1024px) {
-    
-    .main-container{
 
-        grid-template-columns: auto;
-    }
     .icon-svg{
         margin-left: -30px!important;
         height: 26px;
@@ -137,11 +189,7 @@
   */
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .main-container{
-
-        grid-template-columns: auto;
-    }
+ 
     .icon-svg{
         margin-left: -30px!important;
         height: 26px;
@@ -158,11 +206,6 @@
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-    
-    .main-container{
-
-        grid-template-columns: auto;
-    }
     .icon-svg{
         margin-left: -30px!important;
         height: 26px;
@@ -172,7 +215,6 @@
     }
     
   }
-  
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
@@ -180,10 +222,7 @@
   
   @media (min-width: 321px) and (max-width: 480px) {
     
-    .main-container{
 
-        grid-template-columns: auto;
-    }
     .icon-svg{
         margin-left: -30px!important;
         height: 26px;
@@ -205,7 +244,6 @@
     
     .main-container{
         padding: 5px;
-        grid-template-columns: auto;
     }
     .icon-svg{
         margin-left: -30px!important;

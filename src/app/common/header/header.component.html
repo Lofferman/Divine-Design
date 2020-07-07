@@ -21,9 +21,9 @@
   class="sidenav" 
   (click)="onSidenavClick()"
   >
-  <a mat-button><div class="menuLinks" [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('SERVICES')">Services</div></a>
+  <a mat-button><div class="menuLinks" [ngClass]="{'currentPage': currentLocation === 'SERVICES'}" (click)="navigateTo('SERVICES')">Services</div></a>
   <!-- <a mat-button routerLink="/page1">Portfolio</a> -->
-  <a mat-button><div class="menuLinks"  [ngClass]="{'currentPage': currentLocation}" (click)="navigateTo('CONTACT')">Contact</div>
+  <a mat-button><div class="menuLinks"  [ngClass]="{'currentPage': currentLocation === 'CONTACT'}" (click)="navigateTo('CONTACT')">Contact</div>
   </a>
 </mat-sidenav>
 

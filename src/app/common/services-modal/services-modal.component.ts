@@ -28,12 +28,12 @@ export class ServicesModalComponent implements OnInit {
             sub:false
           },
           {
-            name:'/w HL and LL',
+            name:'w/ HL and LL',
             value:'85',
             sub:true
           },
           {
-            name:'/w demi',
+            name:'w/ demi',
             value:'67',
             sub:true
           },        {
@@ -48,29 +48,16 @@ export class ServicesModalComponent implements OnInit {
         ]
         break;
 
-        case 'PERM':
+        case 'PERMS':
           this.items = [
             {
-              name:'Roots',
+              name:'Basic',
               value:'55',
               sub:false
             },
             {
-              name:'/w HL and LL',
-              value:'85',
-              sub:true
-            },
-            {
-              name:'/w demi',
-              value:'67',
-              sub:true
-            },        {
-              name:'All Over',
-              value:'75',
-              sub:false
-            },        {
-              name:'Extra Bowl',
-              value:'12',
+              name:'Specialty',
+              value:'85+',
               sub:false
             }
           ]
@@ -79,26 +66,22 @@ export class ServicesModalComponent implements OnInit {
           case 'WAX':
             this.items = [
               {
-                name:'Roots',
-                value:'55',
+                name:'Brows',
+                value:'15',
                 sub:false
               },
               {
-                name:'/w HL and LL',
-                value:'85',
-                sub:true
+                name:'Lip',
+                value:'10',
+                sub:false
               },
               {
-                name:'/w demi',
-                value:'67',
-                sub:true
-              },        {
-                name:'All Over',
-                value:'75',
+                name:'Chin',
+                value:'10',
                 sub:false
               },        {
-                name:'Extra Bowl',
-                value:'12',
+                name:'Armpits',
+                value:'25',
                 sub:false
               }
             ]
@@ -107,54 +90,100 @@ export class ServicesModalComponent implements OnInit {
             case 'HAIRCUTS':
               this.items = [
                 {
-                  name:'Roots',
-                  value:'55',
+                  name:'Clippers',
+                  value:'15',
                   sub:false
                 },
                 {
-                  name:'/w HL and LL',
-                  value:'85',
-                  sub:true
+                  name:'Scissors',
+                  value:'18',
+                  sub:false
                 },
                 {
-                  name:'/w demi',
-                  value:'67',
-                  sub:true
-                },        {
-                  name:'All Over',
-                  value:'75',
+                  name:'Trim w/ CS',
+                  value:'12',
                   sub:false
                 },        {
-                  name:'Extra Bowl',
+                  name:'Children',
                   value:'12',
                   sub:false
                 }
               ]
               break;
 
+              case 'LIGHTENING':
+                this.items = [
+                  {
+                    name:'Foil',
+                    value:'4',
+                    sub:false
+                  },
+                  {
+                    name:'10-20',
+                    value:'45',
+                    sub:false
+                  },
+                  {
+                    name:'All over (3 B)',
+                    value:'85',
+                    sub:false
+                  },
+                  {
+                    name:'Extra Bowl',
+                    value:'10',
+                    sub:false
+                  }
+                ]
+                break;
+
+                case 'SPECIALCOLORING':
+                  this.items = [
+                    {
+                      name:'Balayage',
+                      value:'75+',
+                      sub:false
+                    },
+                    {
+                      name:'HL w/ smudge root',
+                      value:'',
+                      sub:false
+                    },
+                    {
+                      name:'Halo',
+                      value:'55',
+                      sub:true
+                    },
+                    {
+                      name:'All over',
+                      value:'85+',
+                      sub:true
+                    }
+                  ]
+                  break;
+
               case 'OTHER':
                 this.items = [
                   {
-                    name:'Roots',
-                    value:'55',
+                    name:'Shampoo/Set/Style',
+                    value:'18',
                     sub:false
                   },
                   {
-                    name:'/w HL and LL',
-                    value:'85',
-                    sub:true
+                    name:'Shampoo/Cut/Blow dry',
+                    value:'20',
+                    sub:false
                   },
                   {
-                    name:'/w demi',
-                    value:'67',
-                    sub:true
-                  },        {
-                    name:'All Over',
-                    value:'75',
+                    name:'Shampoo/Cut/Style',
+                    value:'25',
                     sub:false
                   },        {
-                    name:'Extra Bowl',
-                    value:'12',
+                    name:'Style',
+                    value:'15',
+                    sub:false
+                  },        {
+                    name:'Wash',
+                    value:'10',
                     sub:false
                   }
                 ]
