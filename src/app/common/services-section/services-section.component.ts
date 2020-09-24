@@ -23,7 +23,7 @@ export class ServicesSectionComponent implements OnInit {
         colorHex:"#484848"
       },
       {
-        displayName: "lightening",
+        displayName: "Lightening",
         serviceName: "LIGHTENING",
         colorHex:"#713945"
       },

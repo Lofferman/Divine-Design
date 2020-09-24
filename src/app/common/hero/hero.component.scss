@@ -191,6 +191,11 @@ animation: bounce 10s infinite  alternate; */
         grid-row-end: 2;
         margin-top: 30px;
         justify-content: center;
+        display: none;
+        //When square is fixed undo the above
+
+        div{
+        }
     }
 
     
