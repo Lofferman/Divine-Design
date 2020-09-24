@@ -32,7 +32,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
-
+//import { NgxMasonryModule } from 'ngx-masonry';
+import { MasonryGalleryModule } from 'ngx-masonry-gallery';
 
 
 
@@ -74,7 +75,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
         MatSnackBarModule,
         MatTableModule,
         MatSortModule,
-        MatPaginatorModule
+        MatPaginatorModule,
+        MasonryGalleryModule
     ],
     imports: [
         BrowserModule,
@@ -108,7 +110,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
         MatTableModule,
         MatSortModule,
         MatPaginatorModule,
-
+        MasonryGalleryModule
     ],
 })
 export class MaterialModule {}

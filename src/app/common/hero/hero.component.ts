@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppointmentsDialogComponent } from 'src/app/common/appointments-dialog/appointments-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-hero',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
-
+  openDialog() {
+    this.dialog.open(AppointmentsDialogComponent, {
+      width: '85vw',
+      data: {}
+    });
+  }
 }

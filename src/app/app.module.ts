@@ -12,6 +12,9 @@ import { ServicesSectionComponent } from './common/services-section/services-sec
 import { ServicesModalComponent } from './common/services-modal/services-modal.component';
 import { HeroComponent } from './common/hero/hero.component';
 import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import { PortfolioComponent } from './common/portfolio/portfolio.component';
+import { AppointmentsComponent } from './common/appointments/appointments.component';
+import { AppointmentsDialogComponent } from './common/appointments-dialog/appointments-dialog.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
     ContactComponent,
     ServicesSectionComponent,
     ServicesModalComponent,
-    HeroComponent
+    HeroComponent,
+    PortfolioComponent,
+    AppointmentsComponent,
+    AppointmentsDialogComponent
   ],
   imports: [
     BrowserModule,

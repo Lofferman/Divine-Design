@@ -1,4 +1,4 @@
-<div class="menu-bar">
+<!-- <div class="menu-bar">
           <span class="iconMain"><img src="assets/img/ICON.svg" alt="logo" class="icon" (click)="navigateTo('TOP')" #top></span>
           <span class="spacer">
             <img class=".div-transparent left-scis" src="assets/img/scis.png" alt="hero">
@@ -19,11 +19,37 @@
   mode="over" 
   [(opened)]="isMenuOpen" 
   class="sidenav" 
+  [ngClass]="{'open': isMenuOpen}"
   (click)="onSidenavClick()"
   >
   <a mat-button><div class="menuLinks" [ngClass]="{'currentPage': currentLocation === 'SERVICES'}" (click)="navigateTo('SERVICES')">Services</div></a>
-  <!-- <a mat-button routerLink="/page1">Portfolio</a> -->
   <a mat-button><div class="menuLinks"  [ngClass]="{'currentPage': currentLocation === 'CONTACT'}" (click)="navigateTo('CONTACT')">Contact</div>
   </a>
-</mat-sidenav>
+</mat-sidenav> -->
 
+<header class="header">
+  <span class="logo iconMain"><img src="assets/img/ICON.svg" alt="logo" (click)="navigateTo('TOP')"></span>
+  <span class="spacer">
+    <img class="left-scis" src="assets/img/scis.png" alt="hero">
+    <div class="line"></div>
+    <img class="right-scis" src="assets/img/scis.png" alt="hero">
+</span>
+<!-- <div class="right">
+  <ng-container *ngIf="onResize() === 'small'">
+    <label class="menu-icon" for="menu-btn"><a id="hamburger-icon" href="#" title="Menu" (click)="toggleMenu()">
+      <span class="hLine line-1"></span>
+      <span class="hLine line-2"></span>
+      <span class="hLine line-3"></span>
+    </a></label>
+  </ng-container>
+
+
+  <ng-container *ngIf="onResize() === 'large' || (onResize() === 'small' && menuClicked)">
+    <ul class="menu" [ngClass]="{'dropdown': menuClicked}">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</ng-container>
+</div> -->
+</header>

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { SiteDataService } from '../services/site-data.service';
 
 @Component({
@@ -15,8 +15,11 @@ public isMenuOpen: boolean = false;
 @ViewChild('contact') contactLink: ElementRef;
   constructor(private siteData: SiteDataService) { }
   currentLocation
+  innerWidth
+  menuClicked = false
   ngOnInit(): void {
-    
+    this.innerWidth = window.innerWidth;
+    console.log(window.innerWidth)
   }
 
 
@@ -27,5 +30,18 @@ public isMenuOpen: boolean = false;
   }
   public onSidenavClick(): void {
     this.isMenuOpen = false;
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.innerWidth = window.innerWidth;
+    if(innerWidth < 768){
+      return 'small'
+    }else{
+      return 'large'
+    }
+
+  }
+  toggleMenu() {
+    this.menuClicked = !this.menuClicked;
   }
 }

@@ -12,17 +12,17 @@ constructor(private siteData: SiteDataService,
   ) { 
   this.siteData.scrollObj.subscribe(val => {
     
-    this.triggerScrollTo(val)
+    //this.triggerScrollTo(val)
     console.log(val)
   });
   
 }
 
-triggerScrollTo(dest) {
+/*triggerScrollTo(dest) {
     console.log(dest)
     let el = document.getElementById(dest);
     el.scrollTop = el.scrollHeight;
-}
+}*/
 /*
 navigateTo(location){
   console.log(location)
