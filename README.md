@@ -1,8 +1,11 @@
 # Divine Design
 
-https://divinedesignhair.com/
+![Website](https://divinedesignhair.com)
 
 This project is currently used by Divine Design Hair Salon to display their information and services
+
+![Homepage](Homepage.png)
+
 
 ## Development server
 
