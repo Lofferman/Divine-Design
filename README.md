@@ -1,6 +1,6 @@
 # Divine Design
 
-![Website](https://divinedesignhair.com)
+https://divinedesignhair.com
 
 This project is currently used by Divine Design Hair Salon to display their information and services
 
