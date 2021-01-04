@@ -11,10 +11,6 @@ export class AppComponent {
 
 constructor(
   ) {
-
-  if (environment.production) {
-      enableProdMode();
-  }
 }
 
 }
