@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
-import { SiteDataService } from '../services/site-data.service';
 
 @Component({
   selector: 'app-header',
@@ -13,7 +12,7 @@ public isMenuOpen: boolean = false;
 @ViewChild('top') topLink: ElementRef;
 @ViewChild('stylists') stylistsLink: ElementRef;
 @ViewChild('contact') contactLink: ElementRef;
-  constructor(private siteData: SiteDataService) { }
+  constructor() { }
   currentLocation
   innerWidth
   menuClicked = false
@@ -22,12 +21,6 @@ public isMenuOpen: boolean = false;
     console.log(window.innerWidth)
   }
 
-
-  navigateTo(location){
-    console.log(location)
-    this.currentLocation = location
-  this.siteData.setScrollObj(location)
-  }
   public onSidenavClick(): void {
     this.isMenuOpen = false;
   }

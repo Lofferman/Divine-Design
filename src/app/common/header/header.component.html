@@ -4,7 +4,7 @@
             <img class=".div-transparent left-scis" src="assets/img/scis.png" alt="hero">
             <div class="line"></div>
             <img class=".div-transparent right-scis" src="assets/img/scis.png" alt="hero">
-        </span> 
+        </span>
           <div class="link1 links" [ngClass]="{'currentPage': currentLocation === 'SERVICES'}" (click)="navigateTo('SERVICES')">Services</div>
           <div class="link2 links"  [ngClass]="{'currentPage': currentLocation === 'CONTACT'}" (click)="navigateTo('CONTACT')">Contact</div>
             <div class="container menu-button" (click)="sidenav.toggle()">
@@ -13,12 +13,12 @@
               <div [ngClass]="{'change3': isMenuOpen}" class="bar3"></div>
             </div>
 </div>
-<mat-sidenav 
-  #sidenav 
-  autoFocus="false" 
-  mode="over" 
-  [(opened)]="isMenuOpen" 
-  class="sidenav" 
+<mat-sidenav
+  #sidenav
+  autoFocus="false"
+  mode="over"
+  [(opened)]="isMenuOpen"
+  class="sidenav"
   [ngClass]="{'open': isMenuOpen}"
   (click)="onSidenavClick()"
   >
@@ -28,7 +28,7 @@
 </mat-sidenav> -->
 
 <header class="header">
-  <span class="logo iconMain"><img src="assets/img/ICON.svg" alt="logo" (click)="navigateTo('TOP')"></span>
+  <span class="logo iconMain"><img src="assets/img/ICON.svg" alt="logo"></span>
   <span class="spacer">
     <img class="left-scis" src="assets/img/scis.png" alt="hero">
     <div class="line"></div>

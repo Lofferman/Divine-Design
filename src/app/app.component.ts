@@ -1,5 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { SiteDataService } from './common/services/site-data.service';
+import { enableProdMode } from '@angular/core';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,34 +9,12 @@ import { SiteDataService } from './common/services/site-data.service';
 })
 export class AppComponent {
 
-constructor(private siteData: SiteDataService,
-  ) { 
-  this.siteData.scrollObj.subscribe(val => {
-    
-    //this.triggerScrollTo(val)
-    console.log(val)
-  });
-  
+constructor(
+  ) {
+
+  if (environment.production) {
+      enableProdMode();
+  }
 }
 
-/*triggerScrollTo(dest) {
-    console.log(dest)
-    let el = document.getElementById(dest);
-    el.scrollTop = el.scrollHeight;
-}*/
-/*
-navigateTo(location){
-  console.log(location)
-if(location === 'TOP'){
-  this.topLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-}else 
-if(location === 'SERVICES'){
-  this.servicesLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-}else 
-if(location === 'CONTACT'){
-  this.contactLink.nativeElement.scrollIntoView({behavior: 'smooth'});
-}else{
-  console.log("Error: Invalid scrollTo")
-}
-}*/
 }
