@@ -1,6 +1,6 @@
 # Divine Design
 
-https://divinedesignhair.com
+https://divinedesignhair.com [![Netlify Status](https://api.netlify.com/api/v1/badges/3a00808d-aa1c-4fb7-9b9e-a91d5c012c2e/deploy-status)](https://app.netlify.com/sites/peaceful-lalande-48098a/deploys)
 
 This project is currently used by Divine Design Hair Salon to display their information and services
 
